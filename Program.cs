@@ -39,7 +39,7 @@
 
         //Kiểm tra phần tử lặp
         int[] input = { 7, 6, 3, 6, 7, 2, 2, 9, 6, 5, 5 };
-        /*
+        
         string result = " ";
         for (int i = 0; i < input.Length - 1; i++)
         {
@@ -47,18 +47,22 @@
             {
                 if (input[i] == input[j])
                 {
+                    bool flag = false;
                     for (int k = 0; k < result.Length; k++)
                     {
-                        if (input[i] == result[k])
+                        if (input[i].ToString()[0] == result[k])
+                        {
+                            flag = true;
                             break;
-                        result = result + input[i];
-                        break;
+                        }
                     }
+                    if(!flag)
+                        result = result + input[i];
                 }
             }
         }
         Console.WriteLine("Result: "+result);
-        */
+        
         int[] b = new int[input.Length];
         //Sao chép mảng input sang mảng b
         for (int i = 0; i < b.Length; i++)
