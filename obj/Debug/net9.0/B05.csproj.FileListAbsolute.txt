@@ -12,3 +12,4 @@
 /Users/hoangthanh/CS_2025_HKC/InfoSec/B05/obj/Debug/net9.0/B05.pdb
 /Users/hoangthanh/CS_2025_HKC/InfoSec/B05/obj/Debug/net9.0/B05.genruntimeconfig.cache
 /Users/hoangthanh/CS_2025_HKC/InfoSec/B05/obj/Debug/net9.0/ref/B05.dll
+/Users/hoangthanh/CS_2025_HKC/InfoSec/B05/obj/Debug/net9.0/B05.sourcelink.json

@@ -38,7 +38,8 @@
         //--> Không được gán trực tiếp 2 mảng: b = a; !!!!!
 
         //Kiểm tra phần tử lặp
-        int[] input = { 7, 3, 7, 2, 2, 9, 6 };
+        int[] input = { 7, 6, 3, 6, 7, 2, 2, 9, 6, 5, 5 };
+        /*
         string result = " ";
         for (int i = 0; i < input.Length - 1; i++)
         {
@@ -57,5 +58,28 @@
             }
         }
         Console.WriteLine("Result: "+result);
+        */
+        int[] b = new int[input.Length];
+        //Sao chép mảng input sang mảng b
+        for (int i = 0; i < b.Length; i++)
+            b[i] = input[i];
+        //Sắp xếp mảng b
+        for (int i = 0; i < b.Length - 1; i++)
+            for (int j = i + 1; j < b.Length; j++)
+                if (b[i] > b[j]){
+                    int temp = b[i];
+                    b[i] = b[j];
+                    b[j] = temp;
+                }
+        string result2 = "";
+        for (int i = 1; i < b.Length - 1; i++)
+            if (b[i] != b[i + 1] && b[i - 1] == b[i]){
+                result2 = result2 + b[i];
+            }
+        if (b[b.Length - 2] == b[b.Length - 1])
+            result2 = result2 + b[b.Length - 2];
+        Console.WriteLine("Result 2: "+result2);
+        
+        
     }
 }
